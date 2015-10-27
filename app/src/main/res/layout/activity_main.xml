@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="30dip"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标准体重计算器"
+            android:id="@+id/textView"
+            android:textSize="30dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入您的体重："
+            android:id="@+id/textView2"
+            android:textSize="20dip" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_weight="0.37" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:id="@+id/textView3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择性别："
+            android:id="@+id/textView4"
+            android:textSize="20dip" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男"
+            android:id="@+id/man"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:id="@+id/woman"
+            android:checked="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+        <Button
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="计     算"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.07"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5" />
+    </LinearLayout>
+
+</RelativeLayout>
